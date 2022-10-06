@@ -5,17 +5,14 @@ const MarioCar = require('../models/mariochar');
 describe('Saving records', function(){
 
 //Create test
-it('Saves a record to the database', function(done){
+   it('Saves a record to the database', function(done){
+      var char = new MarioCar({
+      name: 'Mario'
+      });
 
-   var char = new MarioCar({
-    name: 'Mario'
-   });
-
-   char.save().then(function(){
-        assert(char.isNew === false); 
-        done(); 
-   });
-
-});
-
+      char.save().then(function(){
+         assert(char.isNew === false); 
+         done(); 
+    });
+ });
 });

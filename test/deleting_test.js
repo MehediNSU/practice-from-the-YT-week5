@@ -4,6 +4,7 @@ const MarioChar = require('../models/mariochar');
 // Describe our tests
 describe('Deleting records', function(){
   var char;
+  
   // Add a character to the db before each tests
   beforeEach(function(done){
     char = new MarioChar({

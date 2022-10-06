@@ -31,8 +31,6 @@ describe('Updating records', function(){
             assert(record.weight === 51);
             done();
         });
-    });
- });
-
-
+     });
+  });
 });
